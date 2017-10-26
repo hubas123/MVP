@@ -1,72 +1,72 @@
 package nz.co.udenbrothers.clockwork.temps;
 
-import nz.co.udenbrothers.clockwork.App;
+import nz.co.udenbrothers.clockwork.app.Preferences;
 
 
 public class Profile {
 
     public static String firstName(){
-        return App.getStr("firstName");
+        return Preferences.getInstance().getStr("firstName");
     }
 
     public static String lastName(){
-        return App.getStr("lastName");
+        return Preferences.getInstance().getStr("lastName");
     }
 
     public static void firstName(String n){
-        App.putStr("firstName", n);
+        Preferences.getInstance().putStr("firstName", n);
     }
 
     public static void lastName(String n){
-        App.putStr("lastName", n);
+        Preferences.getInstance().putStr("lastName", n);
     }
 
     public static int role(){
-        return App.getInt("role");
+        return Preferences.getInstance().getInt("role");
     }
 
     public static void role(int r){
-        App.putInt("role", r);
+        Preferences.getInstance().putInt("role", r);
     }
 
     public static void userID(String s){
-        App.putStr("userID", s);
+        Preferences.getInstance().putStr("userID", s);
     }
 
     public static String userID(){
-        return App.getStr("userID");
+        return Preferences.getInstance().getStr("userID");
     }
 
     public static void token(String s){
-        App.putStr("token", s);
+        Preferences.getInstance().putStr("token", s);
     }
 
     public static String token(){
-        return App.getStr("token");
+        return Preferences.getInstance().getStr("token");
     }
 
     public static void email(String s){
-        App.putStr("email", s);
+        Preferences.getInstance().putStr("email", s);
     }
 
     public static String email(){
-        return App.getStr("email");
+        return Preferences.getInstance().getStr("email");
     }
 
     public static void company(String s){
-        App.putStr("company", s);
+        Preferences.getInstance().putStr("company", s);
     }
 
     public static String company(){
-        return App.getStr("company");
+        return Preferences.getInstance().getStr("company");
     }
 
     public static void bussID(String s){
-        App.putStr("bussID", s);
+        Preferences.getInstance().putStr("bussID", s);
     }
 
     public static String bussID(){
-        return App.getStr("bussID");
+        return Preferences.getInstance().getStr("bussID");
     }
 
     public static void logout(){

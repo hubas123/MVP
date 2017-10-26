@@ -5,7 +5,7 @@ import android.widget.TextView;
 import nz.co.udenbrothers.clockwork.R;
 import nz.co.udenbrothers.clockwork.itemRecycler.CollectionView;
 import nz.co.udenbrothers.clockwork.itemRecycler.items.Item;
-import nz.co.udenbrothers.clockwork.models.Notice;
+import nz.co.udenbrothers.clockwork.models.db.NoticeItem;
 
 
 public class NoticeViewHolder extends ItemHolder {
@@ -21,9 +21,9 @@ public class NoticeViewHolder extends ItemHolder {
 
     @Override
     public void init(Item item) {
-        Notice notice = (Notice) item.model;
-        title.setText(notice.title);
-        message.setText(notice.message);
+        NoticeItem notice = (NoticeItem) item.model;
+        title.setText(notice.getTitle());
+        message.setText(notice.getMessage());
     }
 
     @Override

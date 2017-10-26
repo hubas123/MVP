@@ -9,8 +9,8 @@ import android.media.MediaPlayer;
 
 import java.util.Calendar;
 
-import nz.co.udenbrothers.clockwork.App;
 import nz.co.udenbrothers.clockwork.R;
+import nz.co.udenbrothers.clockwork.app.Preferences;
 import nz.co.udenbrothers.clockwork.temps.Noti;
 import nz.co.udenbrothers.clockwork.tools.MyDate;
 import nz.co.udenbrothers.clockwork.tools.Notify;
@@ -21,7 +21,7 @@ public class ClockOutReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if(!App.getBool(MyDate.weekDay(),true)) return;
+        if(!Preferences.getInstance().getBool(MyDate.weekDay(),true)) return;
         MediaPlayer.create(context, R.raw.my_sound).start();
         new Notify(context, "Reminder").send("Don't forget to clock out", 4327);
     }

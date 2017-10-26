@@ -2,22 +2,10 @@ package nz.co.udenbrothers.clockwork.serverices;
 
 import android.app.Service;
 import android.content.Intent;
-import android.graphics.PixelFormat;
 import android.os.Handler;
 import android.os.IBinder;
-import android.util.DisplayMetrics;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import java.util.Date;
-import java.util.Locale;
-
-import nz.co.udenbrothers.clockwork.R;
-import nz.co.udenbrothers.clockwork.temps.Act;
-import nz.co.udenbrothers.clockwork.tools.MyDate;
 
 public class WedgeService extends Service {
 
@@ -38,7 +26,7 @@ public class WedgeService extends Service {
     @Override public void onCreate() {
         super.onCreate();
 
-        WindowManager.LayoutParams params;
+        /*WindowManager.LayoutParams params;
         handler = new Handler();
         windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         DisplayMetrics metrics = new DisplayMetrics();
@@ -86,14 +74,17 @@ public class WedgeService extends Service {
         wedgeView.setOnClickListener(v -> stopSelf());
 
         handler.postDelayed(this::stopSelf, 4000);
+        */
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
+        /*
         if (wedgeView.isShown()){
             windowManager.removeView(wedgeView);
         }
         handler.removeCallbacksAndMessages(null);
+        */
     }
 }

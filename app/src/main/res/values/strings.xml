@@ -1,4 +1,35 @@
 <resources>
     <string name="app_name">Clockwork</string>
     <string name="imgDes">missing link</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="error_email_not_found">Email not found</string>
+    <string name="error_invalid_password">Invalid password</string>
+    <string name="no_internet_connection">No internet connection. Please try later.</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="error_invalid_email">Invalid email</string>
+    <string name="password_too_short">Must be at least 6 length</string>
+    <string name="failed_download_projects">Failed to download projects: %s</string>
+    <string name="failed_download_shifts">Failed to download shifts: %s</string>
+    <string name="failed_download_users">Failed to download users: %s</string>
+    <string name="title_home">Home</string>
+    <string name="start_activity">Start Activity</string>
+    <string name="total">TOTAL</string>
+    <string name="today">Today</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="started">Started</string>
+    <string name="worked">Worked</string>
+    <string name="your_day_today">Your Day Today</string>
+    <string name="manually_end_activity">Manually End Activity</string>
+    <string name="working_now">Working now: %s</string>
+    <string name="comment_force_stop">This shift was force stopped by the user</string>
+    <string name="time_format">%1$dh %2$02dm</string>
+    <string name="switch_end_actvity">Switch or end Activity</string>
+    <string name="clocked_out">Clocked out from: %s</string>
+    <string name="put_your_optional_comment_here">Enter any comments here…</string>
+    <string name="save">Save</string>
+    <string name="finished">Finished</string>
+    <string name="more_info">More Info</string>
+    <string name="delete">Delete</string>
+    <string name="records_template">%d records in this project</string>
 </resources>

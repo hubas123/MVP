@@ -6,7 +6,8 @@ import android.content.Context;
 import android.support.v4.app.NotificationCompat;
 
 import nz.co.udenbrothers.clockwork.R;
-import nz.co.udenbrothers.clockwork.models.Notice;
+import nz.co.udenbrothers.clockwork.app.App;
+import nz.co.udenbrothers.clockwork.models.db.NoticeItem;
 import nz.co.udenbrothers.clockwork.temps.Setting;
 
 public class Notify {
@@ -22,8 +23,8 @@ public class Notify {
     }
 
     public void send(String mss, int id){
-        Notice notice = new Notice(title,mss);
-        notice.save();
+        NoticeItem notice = new NoticeItem(title,mss);
+        ((App)context.getApplicationContext()).getDaoSession().getNoticeItemDao().insert(notice);
         if(Setting.notification()){
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
                     .setContentTitle(title)

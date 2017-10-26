@@ -1,6 +1,6 @@
 package nz.co.udenbrothers.clockwork.itemRecycler.items;
 
-import nz.co.udenbrothers.clockwork.global.V;
+import nz.co.udenbrothers.clockwork.app.V;
 
 
 public class HeaderItem extends Item{

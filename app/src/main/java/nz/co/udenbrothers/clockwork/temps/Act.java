@@ -1,6 +1,6 @@
 package nz.co.udenbrothers.clockwork.temps;
 
-import nz.co.udenbrothers.clockwork.App;
+import nz.co.udenbrothers.clockwork.app.Preferences;
 
 /**
  * Created by user on 29/08/2017.
@@ -8,18 +8,18 @@ import nz.co.udenbrothers.clockwork.App;
 
 public class Act {
     public static String current(){
-        return App.getStr("current");
+        return Preferences.getInstance().getStr("current");
     }
 
     public static String startTime(){
-        return App.getStr("startTime");
+        return Preferences.getInstance().getStr("startTime");
     }
 
     public static void current(String n){
-        App.putStr("current", n);
+        Preferences.getInstance().putStr("current", n);
     }
 
     public static void startTime(String n){
-        App.putStr("startTime", n);
+        Preferences.getInstance().putStr("startTime", n);
     }
 }

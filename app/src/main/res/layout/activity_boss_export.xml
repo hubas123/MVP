@@ -4,7 +4,7 @@
     android:layout_width="310dp"
     android:layout_height="500dp"
     android:background="@android:drawable/dialog_holo_light_frame"
-    tools:context="nz.co.udenbrothers.clockwork.BossExportActivity">
+    tools:context="nz.co.udenbrothers.clockwork.activities.boss.BossExportActivity">
 
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             app:layout_heightPercent="12%"
             app:layout_marginTopPercent="0%"
             android:gravity="center"
-            android:background="#1E90FF"
+            android:background="@color/primary_boss"
             android:layout_centerHorizontal="true"
             android:text="EXPORT DATA"
             android:textColor="#fff"

@@ -5,17 +5,18 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-import nz.co.udenbrothers.clockwork.global.V;
+import nz.co.udenbrothers.clockwork.R;
+import nz.co.udenbrothers.clockwork.app.App;
+import nz.co.udenbrothers.clockwork.app.V;
 import nz.co.udenbrothers.clockwork.itemRecycler.items.Item;
-import nz.co.udenbrothers.clockwork.models.Project;
-import nz.co.udenbrothers.clockwork.sql_stuff.SQL;
+import nz.co.udenbrothers.clockwork.models.db.ProjectItem;
 import nz.co.udenbrothers.clockwork.temps.Act;
 import nz.co.udenbrothers.clockwork.temps.Profile;
 
 
 public class HomeItemMaker extends ItemMaker {
 
-    private List<Project> projects;
+    private List<ProjectItem> projects;
 
     public HomeItemMaker(Context context) {
         super(context);
@@ -23,7 +24,7 @@ public class HomeItemMaker extends ItemMaker {
 
     public List<Item> fetch() {
 
-        projects = SQL.get(Project.class);
+        projects = ((App)context.getApplicationContext()).getDaoSession().getProjectItemDao().loadAll();
 
         List<Item> items = new ArrayList<>();
         if(search(Act.current())){
@@ -34,21 +35,27 @@ public class HomeItemMaker extends ItemMaker {
         }
 
         if(Profile.role() == 1){
-            for (Project model : projects) items.add(newItem(V.PROJECT, model));
+            for (ProjectItem model : projects) items.add(newItem(V.PROJECT, model));
         }
         else if (Profile.role() == 2){
-            for (Project model : projects) items.add(newItem(V.SITE, model));
+            for (ProjectItem model : projects) items.add(newItem(V.SITE, model));
         }
         else {
             throw new ArithmeticException("Fatal");
         }
 
-        items.add(newItem(V.TOTAL,"TOTAL"));
+        items.add(newItem(V.TOTAL,context.getString(R.string.total)));
         return items;
     }
 
     public boolean search(String name) {
-        return name != null && projects.contains(new Project(name));
+        if (name!=null){
+            for (ProjectItem item:projects){
+                if (name.equals(item.getProjectName()))
+                    return true;
+            }
+        }
+        return false;
     }
 
 }

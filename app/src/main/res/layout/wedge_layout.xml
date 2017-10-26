@@ -79,7 +79,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:background="#32CD32"
+        android:background="@color/colorActivated"
         android:layout_width="match_parent"
         android:layout_height="37dp">
 

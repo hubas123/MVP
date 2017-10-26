@@ -19,7 +19,7 @@ public class UserViewHolder extends ItemHolder {
         super(cv, R.layout.site_card_layout);
 
         title =  (TextView) findView(R.id.cardTitle);
-        yesterday =  (TextView) findView(R.id.yesterdayHour);
+        yesterday =  (TextView) findView(R.id.todayHour);
         week =  (TextView) findView(R.id.weekHour);
         month =  (TextView) findView(R.id.monthHour);
         records =  (TextView) findView(R.id.recordTxt);

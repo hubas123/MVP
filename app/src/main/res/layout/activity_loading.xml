@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E90FF"
-    tools:context="nz.co.udenbrothers.clockwork.LoadingActivity">
+    android:background="@color/primary_boss"
+    tools:context="nz.co.udenbrothers.clockwork.activities.common.LoadingActivity">
 
     <ProgressBar
         android:id="@+id/progressBar2"

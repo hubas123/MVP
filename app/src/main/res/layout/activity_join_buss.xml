@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wallpaper"
-    tools:context="nz.co.udenbrothers.clockwork.JoinBussActivity">
+    tools:context="nz.co.udenbrothers.clockwork.activities.staff.JoinBussActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#FF8C00"
+        android:background="@color/primary_staff"
         app:layout_heightPercent="8%">
 
         <TextView

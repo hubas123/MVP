@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nz.co.udenbrothers.clockwork.itemRecycler.items.Item;
-import nz.co.udenbrothers.clockwork.models.Model;
-
 
 
 public class ItemMaker {
@@ -18,9 +16,9 @@ public class ItemMaker {
         this.context = context;
     }
 
-    public final List<Item> toItems(List<? extends Model> models, int type){
+    public final List<Item> toItems(List<? extends Object> models, int type){
         List<Item> items = new ArrayList<>();
-        for (Model model : models){
+        for (Object model : models){
             Item item = new Item(type);
             item.model = model;
             items.add(item);
@@ -28,7 +26,8 @@ public class ItemMaker {
         return items;
     }
 
-    public final Item newItem(int type, Model model) {
+
+    public final Item newItem(int type, Object model) {
         Item item = new Item(type);
         item.model = model;
         return item;

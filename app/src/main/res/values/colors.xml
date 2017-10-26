@@ -4,4 +4,21 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="bkg_card">#8C9EFF</color>
+
+    <color name="primary_staff">@color/base_orange</color>
+    <color name="primary_boss">#17bad4</color>
+    <color name="white">@android:color/white</color>
+    <color name="text_color_dark">@android:color/black</color>
+    <color name="divider_dark">@android:color/black</color>
+    <color name="divider_mid">#595959</color>
+    <color name="colorActivated">@color/base_green</color>
+    <color name="mid_gray">#999999</color>
+    <color name="base_red">#ff0000</color>
+    <color name="clicked_item">@color/base_magenta</color>
+    <color name="base_magenta">#EE82EE</color>
+    <color name="base_green">#32CD32</color>
+    <color name="base_orange">#FF8C00</color>
+    <color name="black">@android:color/black</color>
+    <color name="hint_text_color">#808080</color>
+    <color name="background_red">#DC143C</color>
 </resources>

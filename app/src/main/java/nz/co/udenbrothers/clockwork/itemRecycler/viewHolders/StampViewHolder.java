@@ -11,8 +11,8 @@ import java.util.Date;
 import nz.co.udenbrothers.clockwork.R;
 import nz.co.udenbrothers.clockwork.itemRecycler.CollectionView;
 import nz.co.udenbrothers.clockwork.itemRecycler.items.Item;
-import nz.co.udenbrothers.clockwork.itemRecycler.items.ShiftItem;
-import nz.co.udenbrothers.clockwork.models.Shift;
+import nz.co.udenbrothers.clockwork.itemRecycler.items.ShiftRecyclerItem;
+import nz.co.udenbrothers.clockwork.models.db.ShiftItem;
 import nz.co.udenbrothers.clockwork.tools.Kit;
 import nz.co.udenbrothers.clockwork.tools.MyDate;
 
@@ -39,18 +39,18 @@ public class StampViewHolder extends ItemHolder{
 
     @Override
     public void init(Item item) {
-        ShiftItem shiftItem = (ShiftItem) item;
-        Shift shift = shiftItem.shift;
-        siteNameTxt.setText(shift.qrCodeIdentifier);
-        Date startdate = MyDate.strToDate(shift.shiftTimeStartOnUtc);
-        Date endDate = MyDate.strToDate(shift.shiftTimeEndOnUtc);
+        ShiftRecyclerItem shiftItem = (ShiftRecyclerItem) item;
+        ShiftItem shift = shiftItem.shift;
+        siteNameTxt.setText(shift.getQrCodeIdentifier());
+        Date startdate = MyDate.strToDate(shift.getShiftTimeStartOnUtc());
+        Date endDate = MyDate.strToDate(shift.getShiftTimeEndOnUtc());
         startTimeTxt.setText(MyDate.dateToStr(startdate, "HH:mm"));
         endTimeTxt.setText(MyDate.dateToStr(endDate, "HH:mm"));
 
         workedTimeTxt.setText(MyDate.gethourMin(endDate.getTime() - startdate.getTime()));
 
 
-        if(shift.stopped == 1){
+        if(shift.getStopped() == 1){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                 commentCircle.setBackground(ContextCompat.getDrawable(context, R.drawable.red_circle));
                 commentDot.setBackground(ContextCompat.getDrawable(context, R.drawable.red_dot));
@@ -62,11 +62,11 @@ public class StampViewHolder extends ItemHolder{
         }
 
 
-        commentTxt.setText(shift.comment);
+        commentTxt.setText(shift.getComment());
         card.measure(View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED), View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
         int totalHeight = card.getMeasuredHeight();
         setHeight(Kit.dps(40));
-        if(shift.comment.equals("")){
+        if(shift.getComment().equals("")){
             commentCircle.setVisibility(View.INVISIBLE);
         }
         else {
@@ -75,7 +75,7 @@ public class StampViewHolder extends ItemHolder{
         }
 
         clicked(card, ()->{
-            if(shift.comment.equals("")){
+            if(shift.getComment().equals("")){
                 return;
             }
 

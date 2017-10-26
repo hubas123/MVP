@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import nz.co.udenbrothers.clockwork.abstractions.Provider;
-import nz.co.udenbrothers.clockwork.global.V;
+import nz.co.udenbrothers.clockwork.app.V;
 import nz.co.udenbrothers.clockwork.itemRecycler.items.Item;
 import nz.co.udenbrothers.clockwork.itemRecycler.viewHolders.HeaderViewHolder;
 import nz.co.udenbrothers.clockwork.itemRecycler.viewHolders.ItemHolder;
@@ -21,6 +21,7 @@ import nz.co.udenbrothers.clockwork.itemRecycler.viewHolders.SiteViewHolder;
 import nz.co.udenbrothers.clockwork.itemRecycler.viewHolders.StampViewHolder;
 import nz.co.udenbrothers.clockwork.itemRecycler.viewHolders.TopViewHolder;
 import nz.co.udenbrothers.clockwork.itemRecycler.viewHolders.TotalViewHolder;
+import nz.co.udenbrothers.clockwork.models.db.ProjectItem;
 
 public class CollectionView extends RecyclerView{
 
@@ -72,8 +73,10 @@ public class CollectionView extends RecyclerView{
     }
 
     public void delete(int index){
-        myAdaptor.items.remove(index);
-        myAdaptor.notifyItemRemoved(index);
+        if (index!=RecyclerView.NO_POSITION) {
+            myAdaptor.items.remove(index);
+            myAdaptor.notifyItemRemoved(index);
+        }
     }
 
     public void refresh(List<Item> newItems){
@@ -85,6 +88,20 @@ public class CollectionView extends RecyclerView{
 
     private CollectionView getThis(){
         return this;
+    }
+
+    public void projectUpdated(String projectId) {
+        if (projectId==null)
+            return;
+        for (int i=0;i<myAdaptor.items.size();i++){
+            Item item = myAdaptor.items.get(i);
+            if (item.model instanceof ProjectItem){
+                ProjectItem p = (ProjectItem) item.model;
+                if (projectId.equals(p.getQrCodeIdentifier())){
+                    myAdaptor.notifyItemChanged(i);
+                }
+            }
+        }
     }
 
     private class MyAdaptor extends RecyclerView.Adapter<ItemHolder>{

@@ -163,7 +163,7 @@ public class IabHelper {
     public IabHelper(Context ctx, String base64PublicKey) {
         mContext = ctx.getApplicationContext();
         mSignatureBase64 = base64PublicKey;
-        logDebug("IAB helper created.");
+        logDebug("IAB waitingDlg created.");
     }
 
     /**
@@ -203,7 +203,7 @@ public class IabHelper {
     public void startSetup(final OnIabSetupFinishedListener listener) {
         // If already set up, can't do it again.
         checkNotDisposed();
-        if (mSetupDone) throw new IllegalStateException("IAB helper is already set up.");
+        if (mSetupDone) throw new IllegalStateException("IAB waitingDlg is already set up.");
 
         // Connection to IAB service
         logDebug("Starting in-app billing setup.");
@@ -778,8 +778,8 @@ public class IabHelper {
     // Checks that setup was done; if not, throws an exception.
     void checkSetupDone(String operation) {
         if (!mSetupDone) {
-            logError("Illegal state for operation (" + operation + "): IAB helper is not set up.");
-            throw new IllegalStateException("IAB helper is not set up. Can't perform operation: " + operation);
+            logError("Illegal state for operation (" + operation + "): IAB waitingDlg is not set up.");
+            throw new IllegalStateException("IAB waitingDlg is not set up. Can't perform operation: " + operation);
         }
     }
 

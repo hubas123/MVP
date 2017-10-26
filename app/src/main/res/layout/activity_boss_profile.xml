@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context="nz.co.udenbrothers.clockwork.BossProfileActivity">
+    tools:context="nz.co.udenbrothers.clockwork.activities.boss.BossProfileActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#1E90FF"
+        android:background="@color/primary_boss"
         app:layout_heightPercent="8%">
 
         <TextView
