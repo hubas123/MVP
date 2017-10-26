@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="nz.co.udenbrothers.clockwork">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        tools:ignore="UnusedAttribute" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="clockwork-api.azurewebsites.net"
+                    android:pathPrefix="/v1"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StaffHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme" />
+        <activity
+            android:name=".StaffHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme" />
+        <activity
+            android:name=".StaffProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme" />
+        <activity
+            android:name=".StaffEditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme" />
+        <activity
+            android:name=".StaffSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme" />
+        <activity
+            android:name=".BossHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".BossProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".BossSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".BossMyTeamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".StaffExportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FloatTheme" />
+
+        <receiver
+            android:name=".receiver.ClockOutReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="clockWorkClockOut" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.ClockInReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="clockWorkClockIn" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.CheckReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".UpgradeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UpgradeBussActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForgotPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".JoinBussActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StaffTheme" />
+        <activity
+            android:name=".WorkdaysSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WorkFloatTheme" />
+        <activity
+            android:name=".BossEditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".AddStaffActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+        <activity
+            android:name=".BossExportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FloatTheme" />
+
+        <service
+            android:name=".serverices.WedgeService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receiver.WedgeReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BossTheme" />
+
+        <service
+            android:enabled="true"
+            android:name=".serverices.UploadService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/df67e8dd2906bae25482288e1c2164f688ab644c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c390af22079a61fdc42712c19f15a700f1fc2cbf">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0597ceeb0ba93b6673bee697189289e373ae643e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_532d062c6fc77964265191e4355715eda146d64c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/4338a9e06ff55bf860ddd775ca3232197ae780fd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_187f89a00babb69dd089e1c73144023280842516/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/e8e844d86e60eb6b7a4dcdb10024c02af6a85979/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="315d20ec53c6ee60ac05275bb68edfa632c76581">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c9a2ebfb78b271571e8eabf2a26a943e5578a25e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.3.0_928d1d328d404912a9bd25a12eca6e0e8326ae25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/d424716ff2bd7966243fe969f00aafd099a8c0a1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="083e7bc5a9d9404b49b8f34e5091532361fa28e6">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a763e18f18dccf237bedda57087fcf5094312e1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/78b6da167047107570ba586e294aa2cae86977cc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a4590fa7eadce322ca893129fdc999074e1aa5bf">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_719ffd981daf094afc37e218579324ae478b34cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/55ddd23f1f1db3447432a4ac90ee00d8ae23482c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6062811de7cd71d07a325c66c39f2df1d9de91a0">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9812f92aea52c5a55274dc64af182073eb020c43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.1/e1bb32b12b25e2f78e6786059ca7ea878f8345e0/support-annotations-26.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1bb32b12b25e2f78e6786059ca7ea878f8345e0">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.1_1bf8fa12fcf9d6088c4e769d53d28dd4d7f8be9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/cb18a800f2b66cc199c35943638f1a966a29b472/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5b65ec1ebc84af3baecfd28954c9e7ff01b937a8">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_72db334002211780e46acdc2a63bee0f96c2750f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/f304734296a79b2de474f552998ad8b136a6e47a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="77e3f210322743390ab44e667cc8988ba5d9433b">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3200f2d71872be60982776957de4bd751d88ca40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a6974b91b1606151b111d7f48f065cdbe9c72fe4">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f6d6035ca6a59a4a42929cf76ffc0000a315b53a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/a7ce99f922688db0c1bc9197277184eff0bdd381/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="22c673e65215e0764add61e3102946de895439e4">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f11053a8a9abb52f66ba5cb8fc478852c37da739/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_5ec266e93950f203cce71ee8c8fcbce716f016ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/32fecee13c2bf08626e1f3f1cdcb8c71bd74b581/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="681eeeaec5300e5257ad9bf889c3859ba3833d5a">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8152ded48b7a8fbd4141b3e231b7f107f6751f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/c845703de334ddc6b4b3cd26835458cb1cba1f3d/commons-beanutils-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c845703de334ddc6b4b3cd26835458cb1cba1f3d">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-beanutils-1.9.3_f2de498eec8b99fafc952f314b5f2a4a4c69474d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/316eb537aba83085adfa4e774cd769d09fe1c4c0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="56e96fa067ba358a6c60184e40947810dcd78f30">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_780b625d515deed5b6398c7dc78fddb072a63937/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f9195bd48a9658cb9478fd9efe613aaed7a62234/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/f27ac83afb38a580b8f7baa14a69aee0e2deb6a5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dff4d8f88fe2c0e57306e6981fd9b90caeead7e3">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_27167dedf84ad94ce70aa9e11d96fc5e09bb118b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.1/c336bf600f44b88af356c8a85eef4af822b06a4d/commons-text-1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c336bf600f44b88af356c8a85eef4af822b06a4d">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-text-1.1_1efd3ffcbd5fa157b8030e43088c6375a7b1ce0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/51bb621b57e730acda7d6ea7c79f9b46ac52f46c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cfdb0abe063453835d7e660edb3a894eb8aaf5bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.6/9d28a6b23650e8a7e9063c04588ace6cf7012c17/commons-lang3-3.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9d28a6b23650e8a7e9063c04588ace6cf7012c17">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-lang3-3.6_f4de224d783531a12508e5254ca11149bc39de82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/2e3f651dc8946cfa7bcf66f3034b6bac2a953aef/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="71af915b7f4f7ec0b5f768b365145bb6a5cb9a66">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e0b000850c9d20260825be605101a36882b2ffab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/dedee8a34ea0aef7cd106259f248f969463a5925/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="10c32fcf3d0acc4b208fc39f8d2e16b69ef8bd3b">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7789336250cdf8ffcf2f8604d4decb9e7e526473/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/0eb02db9e85795b3597ed93bd0b98a3a5c984a9c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e7424f816f538c2acfba6169b25e297ea22afbd8">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e4f06be7c1c2419ccb9ee5389b9083a20f464a60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/7e764cbeabfc49f0a86e38c83e750e08e64657d2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d095503f29a8dedc55b9326ed97a5902a1527ab9">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4d978cbd762cfb7dc4d3959c5435596109369864/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-collections-3.2.2_f132f178f98f8d45d1c574e7202226c7ffe9bd3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.android/build-cache/72dd93cd88db5ed6cddea604692508d58c624360/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="20a260591686e2f2aad1b2426b9d46d33b112477">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_89a54f34236ff2204b078645760a77e7e50b40ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/developer/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.0/2b63c820c41cd1666df42f1ba296da9894961e59/opencsv-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2b63c820c41cd1666df42f1ba296da9894961e59">
+        <dex dex="/Users/developer/Documents/Working/Clockwork-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/opencsv-4.0_d0e72ed14ce85466246691e7c6ce3f74ec42e6f1/classes.dex" />
+    </item>
+
+</items>
